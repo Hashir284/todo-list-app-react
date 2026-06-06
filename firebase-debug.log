@@ -1,0 +1,70 @@
+[debug] [2026-06-02T16:16:17.031Z] ----------------------------------------------------------------------
+[debug] [2026-06-02T16:16:17.041Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hashir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-06-02T16:16:17.042Z] CLI Version:   15.19.0
+[debug] [2026-06-02T16:16:17.043Z] Platform:      win32
+[debug] [2026-06-02T16:16:17.043Z] Node Version:  v24.15.0
+[debug] [2026-06-02T16:16:17.044Z] Time:          Tue Jun 02 2026 09:16:17 GMT-0700 (Pacific Daylight Time)
+[debug] [2026-06-02T16:16:17.044Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Hashir Work\Smit Assignments\React\todo-list-app-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-06-02T16:19:49.800Z] ----------------------------------------------------------------------
+[debug] [2026-06-02T16:19:49.810Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hashir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-06-02T16:19:49.811Z] CLI Version:   15.19.0
+[debug] [2026-06-02T16:19:49.811Z] Platform:      win32
+[debug] [2026-06-02T16:19:49.812Z] Node Version:  v24.15.0
+[debug] [2026-06-02T16:19:49.812Z] Time:          Tue Jun 02 2026 09:19:49 GMT-0700 (Pacific Daylight Time)
+[debug] [2026-06-02T16:19:49.813Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Hashir Work\Smit Assignments\React\todo-list-app-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-06-02T16:21:19.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-06-02T16:21:19.259Z] > authorizing via signed-in user (onlyforprofile1@gmail.com)
+[debug] [2026-06-02T16:21:19.262Z] Checked if tokens are valid: true, expires at: 1780420545799
+[debug] [2026-06-02T16:21:19.262Z] Checked if tokens are valid: true, expires at: 1780420545799
+[debug] [2026-06-02T16:21:19.265Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-06-02T16:21:20.221Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-06-02T16:21:20.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-06-02T16:22:03.171Z] Checked if tokens are valid: true, expires at: 1780420545799
+[debug] [2026-06-02T16:22:03.171Z] Checked if tokens are valid: true, expires at: 1780420545799
+[debug] [2026-06-02T16:22:03.172Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-b2663 [none]
+[debug] [2026-06-02T16:22:13.272Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/todo-app-b2663, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/todo-app-b2663 failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2026-06-02T16:22:13.273Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/todo-app-b2663 (original: request to https://firebase.googleapis.com/v1beta1/projects/todo-app-b2663 failed, reason: Client network socket disconnected before secure TLS connection was established)
+[debug] [2026-06-02T16:22:18.281Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Hashir\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
