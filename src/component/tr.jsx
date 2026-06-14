@@ -3,7 +3,7 @@ import "./../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const Tr = ({ task, index, del, i }) => {
+const Tr = ({ task, index, del, i, completed }) => {
 
   const [checked, schecked] = useState("");
 
@@ -16,7 +16,7 @@ const Tr = ({ task, index, del, i }) => {
           className="checkbox"
           id={'e'+index}
           onChange={(e) => {
-            console.log(e.target.checked);
+            completed(e.target.checked, index)
             schecked(e.target.checked);
           }}
         />
