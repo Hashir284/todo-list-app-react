@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Tr = ({ task, index, del, i, completed }) => {
-
   const [checked, schecked] = useState("");
 
   return (
@@ -14,13 +13,15 @@ const Tr = ({ task, index, del, i, completed }) => {
           type="checkbox"
           name=""
           className="checkbox"
-          id={'e'+index}
+          id={"e" + index}
           onChange={(e) => {
-            completed(e.target.checked, index)
+            completed(e.target.checked, index);
             schecked(e.target.checked);
           }}
         />
-        <label htmlFor={'e'+index}>{checked ? <s className="c">{task}</s> : task}</label>
+        <label htmlFor={"e" + index}>
+          {checked ? <s className="c">{task}</s> : task}
+        </label>
       </td>
       <td className="td2">
         <div
