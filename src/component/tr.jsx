@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faPen, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const Tr = ({ task, index, del, i, completed }) => {
+const Tr = ({ task, index, del, i, completed, edit }) => {
   const [checked, schecked] = useState("");
 
   return (
@@ -25,11 +25,23 @@ const Tr = ({ task, index, del, i, completed }) => {
       </td>
       <td className="td2">
         <div
+        style={{display:'flex', gap:'20px', cursor:'pointer'}}>
+
+          <div
           onClick={() => {
             del(i);
           }}
         >
-          <FontAwesomeIcon icon={faXmark} />
+      <FontAwesomeIcon icon={faXmark} />
+        </div>
+
+        <div
+          onClick={() => {
+            edit(i);
+          }}
+        style={{display:'flex', gap:'20px', cursor:'pointer'}}>
+          <FontAwesomeIcon icon={faPen} />
+        </div>
         </div>
       </td>
     </tr>
